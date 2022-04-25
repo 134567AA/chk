@@ -1,0 +1,16 @@
+.b_out{
+    width:1200px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+.b_out p{
+    color: #666;
+    padding-top: 10px ;
+}
+
+.b_outList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

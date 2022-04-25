@@ -1,6 +1,5 @@
 import './home.css';
 import React, { Component } from 'react'
-import Preview from './page/Preview';
 import {Link} from 'react-router-dom';
 
 
@@ -18,7 +17,7 @@ export default class Event extends Component {
             <li><Link to="/discount">제휴 / 할인</Link></li>
             <li className='b_button'>
                 <a href="login" className='b_myButton'>당첨자 발표</a>
-                <a href="timeout" className='b_myButton'>종료된 이벤트</a>
+               <Link to="timeout" className='b_myButton'>종료된 이벤트</Link>
             </li>
         </ul>
         
