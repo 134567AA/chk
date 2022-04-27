@@ -3,11 +3,6 @@ import './all.css';
 
 export default class Preview extends Component {
   render() {
-      // let imgList = [];
-      // for(let x in imgs){
-        
-      // }
-
       const imgs = [
       {id: 1, name : "스텔라 개봉주 무대인사", url : "images/시사회/img1.jpg",date :"2022.03.23 ~ 2022.04.07" },
       {id: 2, name : "해리포터 죽음의 성물2 시사회", url : "images/시사회/img2.jpg",date :"2022.03.23 ~ 2022.04.07" },

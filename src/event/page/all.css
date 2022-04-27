@@ -9,14 +9,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
    
-
 }
 .b_listBox{
     width: 30%;
     margin-bottom: 20px;
     position: relative;
 }
-.b_listBox>div:hover{
+.b_listBox:hover{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
     cursor: pointer;
 }
@@ -52,3 +51,5 @@
 .b_more:hover{
     color: #000;
 }
+
+
