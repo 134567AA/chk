@@ -9,24 +9,29 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import jquery from 'jquery';
-window.$ = window.jquery = jquery;
+// import Main from './event/main/Main';
+import Nav from './event/main/Nav';
+
 
 
 
 function App() {
   return (
    <>
-    <BrowserRouter>
+  <BrowserRouter>
+    {/* <Nav />  */}
     <Home />
-      <Routes>
+        <Routes>
          <Route path="/" element={<Preview />} />
           <Route path="/reserve" element={<Reserve/>} />
           <Route path="/discount" element={<Discount />} />
-          <Route path="timeout" element={<Timeout />} />
-      </Routes>
+          <Route path="timeout" element={<Timeout />} /> 
+      </Routes> 
     </BrowserRouter>
-    
+    {/* <Main /> */}
+     
+     
+ 
    </>
   );
 }

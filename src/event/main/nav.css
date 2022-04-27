@@ -1,0 +1,59 @@
+.b_head{
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.b_imgbox img{
+   max-width: 15%;
+   margin-top: 20px;
+   padding-left: 50px;
+}
+
+.point{
+    color: #00c9c7;
+}
+.b_head a{
+    display: block;
+    
+}
+.b_head span {
+    font-size: 35px;
+}
+
+.b_Nav{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.b_navGnb{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  
+    
+}
+.b_navGnb li{
+    text-align: center;
+}
+.b_lnb{
+    font-family: "GowunDodum-Regular"; 
+    display : none;
+
+}
+input{
+    width: 100px;
+}
+.b_lnb a{
+    display: block;
+    line-height: 80px;
+    text-align: center;
+}
+button{
+    border: none;
+    background-color: #fff;
+  
+}
+.b_navGnb li:hover .b_lnb{
+    display: block;
+}
