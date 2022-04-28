@@ -5,11 +5,18 @@ import Adver from './Adver';
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
 function List(props){
   const lis = [];
   for(let i =0; i <props.img.length; i++){
     let t = props.img[i];
+<<<<<<< HEAD
+=======
+    console.log(t);
+>>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
     lis.push(<li key={t.id}className="b_listBox"><img src={t.url} ></img>
     <p className='b_conTitle b_reserveTitle'>{t.name}</p>
             <p className='b_date'>{t.date}</p></li>)
@@ -18,12 +25,18 @@ function List(props){
   <ul className='b_conList'>
     {lis}
  </ul>
+<<<<<<< HEAD
  <Adver />
+=======
+>>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
 </div>
 }
 
  function Discount() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
   const imgL = [
     {id: 1, name : "아시아나항공 마일리지로 영화 무료", url : "images/할인/img1.jpg",date :"2022.04.30 ~ 2022.06.30" },
     {id: 2, name : "CHK에서 하나머니 하나로 OK!", url : "images/할인/img2.jpg",date :"2022.04.30 ~ 2022.06.30" },
@@ -42,10 +55,13 @@ function List(props){
     <>
   
         <List img={imgL}/>
+<<<<<<< HEAD
         
         <div className='b_more'>
         <p>더보기</p>
      </div>
+=======
+>>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
    
        
      
