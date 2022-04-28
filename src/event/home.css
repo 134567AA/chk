@@ -56,6 +56,9 @@
 }
 
 .b_side{
-   float: right;
-  margin-top: 25px;
+   height: auto;
+   width: 160px;
+   margin-left: 10px;
+ 
 }
+

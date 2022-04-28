@@ -11,7 +11,8 @@ import {
 } from "react-router-dom";
 // import Main from './event/main/Main';
 import Nav from './event/main/Nav';
-import Form from './event/page/Form';
+import Login from './event/page/Login';
+
 
 
 
@@ -21,21 +22,21 @@ function App() {
    <>
   <BrowserRouter>
     {/* <Nav />  */}
-    <Home />
-        {/* <Routes>
+    <Home ></Home>
+         <Routes>
          <Route path="/" element={<Preview />} />
           <Route path="/reserve" element={<Reserve/>} />
           <Route path="/discount" element={<Discount />} />
-          <Route path="timeout" element={<Timeout />} /> 
-      </Routes> */}
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/timeout" element={<Timeout />} /> 
+      </Routes> 
     </BrowserRouter> 
     {/* <Main /> */}
-    <Form/>
-     
+
+ 
      
  
    </>
   );
 }
-
 export default App;

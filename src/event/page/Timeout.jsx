@@ -1,10 +1,11 @@
 import React from 'react'
 import './timeout.css';
 
+
 export default function Timeout() {
   return (
    <>
-   <div className='b_container'>
+   <div className='b_container'> 
     <div className='b_out'>
        <p>종료된 이벤트</p>
         <ul className='b_outList'>
@@ -34,6 +35,7 @@ export default function Timeout() {
         </div>
     </div>
     </div>
+   
    </>
   )
 }
