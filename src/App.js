@@ -19,7 +19,7 @@ import Login from './event/page/Login';
 
 function App() {
   return (
-   <>
+   
   <BrowserRouter>
      <Nav />   
     <Home ></Home>
@@ -31,12 +31,11 @@ function App() {
           <Route path="/timeout" element={<Timeout />} /> 
       </Routes> 
     </BrowserRouter> 
-    {/* <Main /> */}
+    // {/* <Main /> */
 
  
      
- 
-   </>
+
   );
 }
 export default App;

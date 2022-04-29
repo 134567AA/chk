@@ -56,9 +56,22 @@
 }
 
 .b_side{
-   height: auto;
    width: 160px;
+   height: 300px;
+   margin-top: 10px;
    margin-left: 10px;
- 
-}
 
+}
+.b_sideBox{   
+   width: 160px;  
+   height: 300px;
+   margin-left: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.b_sideImg {
+   height: 900px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}

@@ -4,9 +4,20 @@ import $ from 'jquery';
 
 export default class Adver extends Component {
 render() {
-  // $(function(){
-  //   $('.')
-  // })
+  setInterval(slide,3000);
+
+  function slide(){
+    $(function(){
+    $('.b_sideImg').animate({
+      'top' : '-300px'
+    },300,function(){
+      $('.b_sideImg img:eq(0)').clone().appendTo('.b_sideImg');
+      $('.b_sideImg img:eq(0)').remove();
+      $('.b_sideImg').css('top',0);
+    })
+  })
+}
+
    const imgList = [
     {id : 1, url : "images/sideimg1.jpg"},
     {id : 2, url : "images/sideimg2.jpg"},
@@ -16,18 +27,17 @@ render() {
     return (
       <>
       <div className='b_side'>
+        <div className='b_sideBox'>
        <div className='b_sideImg'>
-       <a href="#">
-         <img src={imgList[0].url} className="b_side" alt={imgList[0].id}/>
-         </a>   
+         <img src={imgList[0].url}  alt={imgList[0].id}/>
+         <img src={imgList[2].url}  alt={imgList[2].id}/>
+         <img src={imgList[3].url}  alt={imgList[3].id}/>
       </div>
-      <div className='b_sideImg'>
-       <a href="#">
-         <img src={imgList[1].url} className="b_side" alt={imgList[1].id}/>
-         </a>   
-      </div>
-   </div>   
-
+  </div>
+    <div className='b_side'>
+         <img src={imgList[1].url} alt={imgList[1].id}/>
+      </div> 
+      </div>   
    </>
     )
   }
