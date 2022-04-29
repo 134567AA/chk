@@ -3,10 +3,10 @@
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    position: relative;
 
 }
 .b_title{
-    margin-top: 50px;
     padding-bottom: 20px;
     padding-left: 5px;
     border-bottom: 4px solid #333;

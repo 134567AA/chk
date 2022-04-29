@@ -5,18 +5,10 @@ import $ from 'jquery';
 import Adver from './Adver';
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
 function List(props){
   const lis = [];
   for(let i =0; i <props.img.length; i++){
     let t = props.img[i];
-<<<<<<< HEAD
-=======
-    console.log(t);
->>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
     lis.push(<li key={t.id}className="b_listBox"><img src={t.url} ></img>
     <p className='b_conTitle b_reserveTitle'>{t.name}</p>
             <p className='b_date'>{t.date}</p></li>)
@@ -25,18 +17,16 @@ function List(props){
   <ul className='b_conList'>
     {lis}
  </ul>
-<<<<<<< HEAD
  <Adver />
-=======
->>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
 </div>
 }
 
  function Reserve() {
-<<<<<<< HEAD
+  // $('div.b_more').on("click",()=>{
+  //   $('.b_conList').css("overflow","visible");
+  // })
 
-=======
->>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
+
   const imgi = [
     {id: 1, name : "닥터 스트레인지 : 대혼돈의 멀티버스 리미티드 포스터", url : "images/예매/img1.jpg",date :"2022.03.23 ~ 2022.04.07" },
     {id: 2, name : "닥터 스트레인지 : 대혼돈의 멀티버스 행운의 래플", url : "images/예매/img2.jpg",date :"2022.03.23 ~ 2022.04.07" },
@@ -56,15 +46,11 @@ function List(props){
   
         <List img={imgi}/>
    
-<<<<<<< HEAD
             
-     <div className='b_more'>
+     {/* <div className='b_more'>
         <p>더보기</p>
      </div>
-   
-=======
-       
->>>>>>> f60cce6d70bc3e4854380efd11a0e75b1f264ac9
+    */}
      
    
     </>

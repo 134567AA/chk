@@ -23,6 +23,7 @@ function List(props){
 }
 
  function Discount() {
+ 
   const imgL = [
     {id: 1, name : "아시아나항공 마일리지로 영화 무료", url : "images/할인/img1.jpg",date :"2022.04.30 ~ 2022.06.30" },
     {id: 2, name : "CHK에서 하나머니 하나로 OK!", url : "images/할인/img2.jpg",date :"2022.04.30 ~ 2022.06.30" },
@@ -42,9 +43,7 @@ function List(props){
   
         <List img={imgL}/>
         
-        <div className='b_more'>
-        <p>더보기</p>
-     </div>
+     
    
        
      

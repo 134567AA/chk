@@ -1,8 +1,17 @@
 import React from 'react'
-
+import $ from 'jquery';
 import './login.css';
 
 function Login() {
+  const confirm = ()=>{
+    let a = document.getElementById('userid').value;
+    let b = document.getElementById('userpw').value;
+    if(a == "" || b == ""){
+        alert("아이디와 비밀번호를 확인해주세요!");
+    }
+  }
+
+
   return (
     <>
     <div className='b_container'>
@@ -21,7 +30,7 @@ function Login() {
       <label className='b_remember'><input type="checkbox" id='b_checkbox' name='remember'/>Remember Me?</label>  
     <div className='b_btnbox'>
     <a href="#" className='b_text-right'>Forget password?</a>
-    <button type='submit' className='b_sub b_btn' >로그인</button>
+    <button type='submit' className='b_sub b_btn' onClick={confirm} >로그인</button>
     </div>
   </form>
 <div className='snsIcon'>
