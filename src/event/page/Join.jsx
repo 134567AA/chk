@@ -54,10 +54,6 @@ export default function Join() {
 
 </div>
 
-
-
-
-
     <form className='b_form2'>
       <h3>회원정보 입력</h3>
       <div>
