@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from '../Home';
 import './all.css';
 import $ from 'jquery';
 import Adver from "./Adver";
@@ -16,12 +17,13 @@ function List(props){
     <p className='b_conTitle b_reserveTitle'>{t.name}</p>
             <p className='b_date'>{t.date}</p></li>)
   }
-  return <div className='b_conBox'>
+  return<> <Home /> <div className='b_conBox'>
   <ul className='b_conList'>
     {lis}
  </ul>
  <Adver />
 </div>
+</>
 }
 
  function Preview() {

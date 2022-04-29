@@ -12,7 +12,7 @@ export default class Nav extends Component {
             <div className='b_imgbox'>
             <img src="images/logo.png" alt="logo" />
             </div>
-            <a href="#"><span class="material-symbols-outlined">person_add</span> <span className='b_sm'>회원가입</span></a>
+            <Link to="/join" ><span class="material-symbols-outlined">person_add</span> <span className='b_sm'>회원가입</span></Link>
             <Link to="login"><span class="material-symbols-outlined">login</span><span className='b_sm'>로그인</span></Link>
             <Link to ="/login"><span class="material-symbols-outlined">person</span><span className='b_sm'>사용자</span></Link>
             <a href="#"><span class="material-symbols-outlined">support_agent</span><span className='b_sm'>고객센터</span></a>
@@ -37,9 +37,9 @@ export default class Nav extends Component {
                 <a href="#">굿즈</a>
              </li>
                  </li>
-                <li><Link to="/">이벤트</Link> 
+                <li><Link to="/preview">이벤트</Link> 
                 <li className="b_lnb">
-                <Link to="/">무대인사/시사회</Link>
+                <Link to="/preview">무대인사/시사회</Link>
                 <Link to="/reserve">영화/예매</Link>
                 <Link to="/discount">제휴할인</Link>
                 </li>

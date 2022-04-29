@@ -1,9 +1,8 @@
 import './home.css';
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import Adver from './page/Adver';
 import $ from 'jquery';
-import jquery from 'jquery';
+
 
 
 
@@ -36,11 +35,13 @@ export default class Event extends Component {
   }
 
     return (
-    <>
-    <div className='b_container'>
+    
+  
+        <>
+        <div className='b_container'>
         <h1 className='b_title'><Link to="/"> EVENT</Link></h1>
         <ul className='b_nav'>
-        <li><Link to="/" className='b_movie b_menu1' onClick={btn1} > 무대인사 / 시사회</Link></li>
+        <li><Link to="/preview" className='b_movie b_menu1' onClick={btn1} > 무대인사 / 시사회</Link></li>
         <li><Link to="/reserve" className='b_menu2'onClick={btn2} >영화 / 예매</Link></li>
         <li><Link to="/discount" className='b_menu3'onClick={btn3} >제휴 / 할인</Link></li>
         <li className='b_button'>
@@ -49,8 +50,11 @@ export default class Event extends Component {
         </li>
       </ul> 
       </div> 
+      </>
+   
+ 
   
-    </>
+    
     )
   }
 }
